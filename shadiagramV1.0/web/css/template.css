@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {  
+    margin: auto;
+    width:100%;
+    height: 80px;
+    border: .7px solid rgba(0,0,0,.7) ;
+}
+
+header nav {
+    width:98%;
+    margin: auto;
+    padding-top: 0;
+    background:none;
+}
+
+header nav ul {
+    overflow:hidden;
+    list-style:none;
+}
+
+header nav ul li {
+    float:left;
+}
+
+#logo{
+    transform: translate(-10px,-10px);
+    width: 100px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.mover{
+    margin-top: 3px;
+    margin-left: 20px;
+    transform: translateX(810px);
+}
+
+.mover i{
+    display: none;
+}
+
+header nav ul li a {
+    color:#fff;
+    padding:20px;
+    display:block;
+    text-decoration:none; 
+
+}
+
+header nav ul li a img{
+    width: 30px;
+    height: 30px;
+}
+
+.menu_bar {
+    display:none;
+}
+
+.mover a:hover {
+    background:#1ab188;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,.7);
+}
+
+#logoE:hover{
+    background: none;
+}
+
+footer{
+    background: #1ab188; 
+    color: white;
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+    border-radius: 15px;
+}
+
+table tr td{
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+table tr td a:hover{
+    color:black;
+    text-decoration: none;
+}
+
+table tr td a{
+    color:black;
+}
+
+table tr td h2{
+    text-align: center;
+}
+
+.imagen img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+    border: 2px solid #1ab188;
+}
+
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+
+}
+
+.search_input{
+    padding: 10px;
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 300px;
+    caret-color:red;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+    background: white;
+    color: #1ab188;
+}
+
+.search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+}
+
+@media screen and (max-width: 1752px) {
+    .mover{
+        transform: translateX(1200px);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .mover{
+        transform: translateX(890px);
+    }
+}
+
+@media screen and (max-width: 1414px) {
+    .mover{
+        transform: translateX(880px);
+    }
+}
+
+@media screen and (max-width: 1396px) {
+    .mover{
+        transform: translateX(810px);
+    }
+}
+
+@media screen and (max-width: 1357px) {
+    .mover{
+        transform: translateX(800px);
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .mover{
+        transform: translateX(750px);
+    }
+}
+
+@media screen and (max-width: 1302px) {
+    .mover{
+        transform: translateX(720px);
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .mover{
+        transform: translateX(690px);
+    }
+}
+
+@media screen and (max-width: 1236px) {
+    .mover{
+        transform: translateX(640px);
+    }
+}
+
+@media screen and (max-width: 1208px) {
+    .mover{
+        transform: translateX(600px);
+    }
+}
+
+@media screen and (max-width: 1174px) {
+    .mover{
+        transform: translateX(580px);
+    }
+}
+
+
+@media screen and (max-width: 1135px) {
+    .mover{
+        transform: translateX(530px);
+        margin-left: 35px;
+    }
+}
+
+
+@media screen and (max-width: 1120px) {
+    .mover{
+        transform: translateX(500px);
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .mover{
+        transform: translateX(450px);
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .mover{
+        transform: translateX(400px);
+    }
+}
+
+@media screen and (max-width: 981px) {
+    .mover{
+        transform: translateX(350px);
+    }
+}
+
+@media screen and (max-width: 941px) {
+    .mover{
+        transform: translateX(310px);
+    }
+}
+
+@media screen and (max-width: 923px) {
+    header{
+        margin-top:  0px;
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    .mover a:hover {
+        background:none;
+        border-radius: 0;
+        border: 0;
+        text-decoration: none;
+    }
+
+    #logo{
+        width: 300px;
+        height: 200px;
+        display: block;
+        margin: auto;
+    }
+
+    header nav {
+        width:80%;
+        height:100%;
+        margin:0;
+        position: fixed;
+        background: rgba(0,0,0,.3);
+    }
+
+    header nav ul li {
+        display:block;
+        float:none;
+        border-bottom:1px solid rgba(255,255,255, .3);
+        border-radius: 20px;
+    }
+
+    .mover{
+        margin-top: 60px;
+        transform: none;
+        margin-left: 0;
+    }
+
+    .mover i{
+        display: inline;
+        font-size: 26px;
+        padding-left: 18px;
+    } 
+
+    .menu_bar {
+        display:block;
+        width:100%;
+        background:#ccc;
+    }
+
+    .menu_bar .bt-menu {
+        display:block;
+        padding:20px;
+        background:#1ab188;
+        color:#fff;
+        text-decoration:none;
+        font-weight: bold;
+        font-size:25px;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+
+    .menu_bar i {
+        float:right;
+        font-size:40px;
+    }
+
+    .mover i:hover{
+        text-decoration: none;
+        color:red;
+        background: none;
+    }
+}
+
+@media screen and (max-width: 606px) {
+    .mover i{
+        font-size: 23px;
+    } 
+}
+
+@media screen and (max-width: 439px) {
+    header nav {
+        width:90%;
+    }
+}
+
+@media screen and (max-width: 383px) {
+    #logo{
+        width: 200px;
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    .mover i{
+        font-size: 19px;
+        padding-left: 10px;
+    } 
+}
+
+@media screen and (max-width: 383px) {
+    .mover{
+        margin-top: 40px;
+    }
+    header nav {
+        width:95%;
+    }
+    header nav ul li a img{
+        width: 30px;
+        height: 30px;
+    }
+
+}
